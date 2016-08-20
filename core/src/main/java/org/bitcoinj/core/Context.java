@@ -51,7 +51,7 @@ public class Context {
     private boolean ensureMinRequiredFee = true;
     private Coin feePerKb = Transaction.DEFAULT_TX_FEE;
 
-    //Dash Specific
+    //Gamblr Specific
     private boolean liteMode = true;
     private boolean allowInstantX = true; //allow InstantX in litemode
     public PeerGroup peerGroup;
@@ -194,14 +194,14 @@ public class Context {
     }
 
     //
-    // Dash Specific
+    // Gamblr Specific
     //
 
     public void initDash(boolean liteMode, boolean allowInstantX) {
         this.liteMode = liteMode;
         this.allowInstantX = allowInstantX;
 
-        //Dash Specific
+        //Gamblr Specific
         sporkManager = new SporkManager(this);
 
         masternodePayments = new MasternodePayments(this);

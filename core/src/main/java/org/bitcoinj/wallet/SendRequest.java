@@ -265,6 +265,6 @@ public class SendRequest {
         return helper.toString();
     }
 
-    //Dash Specific
+    //Gamblr Specific
     public boolean useInstantSend;
 }

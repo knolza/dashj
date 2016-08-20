@@ -115,7 +115,7 @@ public abstract class NetworkParameters {
 
 
 
-    //Dash Extra Parameters
+    //Gamblr Extra Parameters
     protected String strSporkKey;
     String strMasternodePaymentsPubKey;
     String strDarksendPoolDummyAddress;

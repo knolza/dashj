@@ -2086,7 +2086,7 @@ public class Peer extends PeerSocketHandler {
         vDownloadTxDependencyDepth = depth;
     }
 
-    //Dash Specific Code
+    //Gamblr Specific Code
     public void notifyLock(Transaction tx)
     {
         for(Wallet wallet : wallets)

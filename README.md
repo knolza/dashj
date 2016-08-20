@@ -2,9 +2,9 @@
 
 [![Visit our IRC channel](https://kiwiirc.com/buttons/irc.freenode.net/bitcoinj.png)](https://kiwiirc.com/client/irc.freenode.net/bitcoinj)
 
-### Welcome to bitcoinj
+### Welcome to gamblrj
 
-The bitcoinj library is a Java implementation of the Bitcoin protocol, which allows it to maintain a wallet and send/receive transactions without needing a local copy of Bitcoin Core. It comes with full documentation and some example apps showing how to use it.
+The gamblrj library is a Java implementation of the Bitcoin protocol, which allows it to maintain a wallet and send/receive transactions without needing a local copy of Bitcoin Core. It comes with full documentation and some example apps showing how to use it.
 
 ### Technologies
 
@@ -21,7 +21,8 @@ To get started, it is best to have the latest JDK and Maven installed. The HEAD 
 
 To perform a full build use
 ```
-mvn clean package
+//mvn clean package
+mvn clean install -DskipTests
 ```
 You can also run
 ```

@@ -2,8 +2,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.dashj</groupId>
-  <artifactId>dashj-parent</artifactId>
+  <groupId>com.knolza</groupId>
+  <artifactId>gamblrj-parent</artifactId>
   <version>0.14.3</version>
   <packaging>pom</packaging>
 
@@ -11,6 +11,7 @@
     <module>core</module>
     <module>examples</module>
     <module>tools</module>
+    <module>orchid</module>
     <module>wallettemplate</module>
   </modules>
 
@@ -22,13 +23,13 @@
 
 
   <scm>
-    <connection>scm:git:https://github.com/HashEngineering/darkcoinj</connection>
-    <developerConnection>scm:git:https://github.com/HashEngineering/darkcoinj</developerConnection>
-    <url>scm:git:https://github.com/bitcoinj/darkcoinj</url>
+    <connection>scm:git:https://github.com/knolza/gamblrj</connection>
+    <developerConnection>scm:git:https://github.com/knolza/gamblrj</developerConnection>
+    <url>scm:git:https://github.com/knolza/gamblrj</url>
   </scm>
 
-  <name>darkcoinj Parent</name>
-  <description>Provides the common configuration for the darkcoinj modules</description>
+  <name>gamblrj Parent</name>
+  <description>Provides the common configuration for the gamblrj modules</description>
   <url>http://www.bitcoinj.org/</url>
 
   <licenses>
@@ -42,13 +43,13 @@
 
   <issueManagement>
     <system>GitHub</system>
-    <url>https://github.com/HashEngineering/dashj/issues</url>
+    <url>https://github.com/knolza/gamblrj/issues</url>
   </issueManagement>
 
   <mailingLists>
     <mailingList>
-      <name>darkcoinj Google Group</name>
-      <post>https://groups.google.com/forum/#!forum/darkcoinj</post>
+      <name>gamblrj Google Group</name>
+      <post>https://groups.google.com/forum/#!forum/gamblrj</post>
     </mailingList>
   </mailingLists>
 

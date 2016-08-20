@@ -12,9 +12,9 @@ import java.util.Map;
 public class CoinDefinition {
 
 
-    public static final String coinName = "Dash";
-    public static final String coinTicker = "DASH";
-    public static final String coinURIScheme = "dash";
+    public static final String coinName = "Gamblr";
+    public static final String coinTicker = "CHIP";
+    public static final String coinURIScheme = "gamblr";
     public static final String cryptsyMarketId = "155";
     public static final String cryptsyMarketCurrency = "BTC";
     public static final String PATTERN_PRIVATE_KEY_START_UNCOMPRESSED = "[7]";
@@ -76,7 +76,7 @@ public class CoinDefinition {
     public static final long INSTANTX_FEE = 1000000;
 
     //
-    // Dash 0.12
+    // Gamblr 0.12
     //
     public static final int PROTOCOL_VERSION = 70201;          //version.h PROTOCOL_VERSION
     public static final int MIN_PROTOCOL_VERSION = 70103;        //version.h MIN_PROTO_VERSION
@@ -87,8 +87,8 @@ public class CoinDefinition {
 
     public static final boolean supportsBloomFiltering = true; //Requires PROTOCOL_VERSION 70000 in the client
 
-    public static final int Port    = 9999;       //protocol.h GetDefaultPort(testnet=false)
-    public static final int TestPort = 19999;     //protocol.h GetDefaultPort(testnet=true)
+    public static final int Port    = 7777;       //protocol.h GetDefaultPort(testnet=false)
+    public static final int TestPort = 17777;     //protocol.h GetDefaultPort(testnet=true)
 
     //
     //  Production
@@ -102,27 +102,22 @@ public class CoinDefinition {
 
     //Genesis Block Information from main.cpp: LoadBlockIndex
     static public long genesisBlockDifficultyTarget = (0x1e0ffff0L);         //main.cpp: LoadBlockIndex
-    static public long genesisBlockTime = 1390095618L;                       //main.cpp: LoadBlockIndex
-    static public long genesisBlockNonce = (28917698);                         //main.cpp: LoadBlockIndex
-    static public String genesisHash = "00000ffd590b1485b3caadc19b22e6379c733355108f107a430458cdf3407ab6"; //main.cpp: hashGenesisBlock
-    static public String genesisMerkleRoot = "e0028eb9648db56b1ac77cf090b99048a8007e2bb64b68f092c03c7f56a662c7";
+    static public long genesisBlockTime = 1468837313L;                       //main.cpp: LoadBlockIndex
+    static public long genesisBlockNonce = (880310);                         //main.cpp: LoadBlockIndex
+    static public String genesisHash = "0000015c110228d3769a7e213411a4cc4b9c6c8a24eefeea833c2a599f266fd3"; //main.cpp: hashGenesisBlock
+    static public String genesisMerkleRoot = "a442938ed81c7c1df8ebe7e97b4adc6456710c2ae104d8955f947ddcba1e49e3";
     static public int genesisBlockValue = 50;                                                              //main.cpp: LoadBlockIndex
     //taken from the raw data of the block explorer
-    static public String genesisTxInBytes = "04ffff001d01044c5957697265642030392f4a616e2f3230313420546865204772616e64204578706572696d656e7420476f6573204c6976653a204f76657273746f636b2e636f6d204973204e6f7720416363657074696e6720426974636f696e73";   //"limecoin se convertira en una de las monedas mas segura del mercado, checa nuestros avances"
-    static public String genesisTxOutBytes = "040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9";
+    static public String genesisTxInBytes = "04ffff001d01044c6554686520436f6e766572736174696f6e2031382f4a756c2f3230313620426c6f636b636861696e20746563686e6f6c6f677920636f756c6420626520612067616d65206368616e67657220666f7220646576656c6f70696e6720636f6d6d756e6974696573";   //"limecoin se convertira en una de las monedas mas segura del mercado, checa nuestros avances"
+    static public String genesisTxOutBytes = "04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f";
 
     //net.cpp strDNSSeed
     static public String[] dnsSeeds = new String[] {
-            "dnsseed.darkcoin.io",
-            "dnsseed.darkcoin.qa",
-            "dnsseed.masternode.io",
-            "dnsseed.dashpay.io",
-            "dnsseed.masternode.io",
-            "dnsseed.darkcoin.qa",
-            "dnsseed.fulltimegeek.com",
-            //"dnsseed.darkcoin.io",
-            "23.23.186.131", //Evan's seed node
-            "162.252.83.46",  //drkpool.com
+            "dnsseed.gamblr.tk",
+            "dnsseed.gamblr.ml",
+            "dnsseed.gamblr.ga",
+            "dnsseed.gamblr.gq",
+            "dnsseed.gamblr.cf",
             /*"107.155.71.72",
             "50.16.206.102",
             "50.19.116.123",
@@ -156,10 +151,10 @@ public class CoinDefinition {
     public static final int testnetAddressHeader = 140;             //base58.h CBitcoinAddress::PUBKEY_ADDRESS_TEST
     public static final int testnetp2shHeader = 19;             //base58.h CBitcoinAddress::SCRIPT_ADDRESS_TEST
     public static final long testnetPacketMagic = 0xcee2caff;      //
-    public static final String testnetGenesisHash = "00000bafbc94add76cb75e2ec92894837288a481e5c005f6563d91623bf8bc2c";
+    public static final String testnetGenesisHash = "000009a1550a7533bfce990194655098f096c55c011e628f5604be3fff43f67c";
     static public long testnetGenesisBlockDifficultyTarget = (0x1e0ffff0L);         //main.cpp: LoadBlockIndex
-    static public long testnetGenesisBlockTime = 1390666206L;                       //main.cpp: LoadBlockIndex
-    static public long testnetGenesisBlockNonce = (3861367235L);                         //main.cpp: LoadBlockIndex
+    static public long testnetGenesisBlockTime = 1468840512L;                       //main.cpp: LoadBlockIndex
+    static public long testnetGenesisBlockNonce = (1801117L);                         //main.cpp: LoadBlockIndex
 
 
 
@@ -200,7 +195,7 @@ public class CoinDefinition {
     //checkpoints.cpp Checkpoints::mapCheckpoints
     public static void initCheckpoints(Map<Integer, Sha256Hash> checkpoints)
     {
-
+/*
         checkpoints.put(  1500, Sha256Hash.wrap("000000aaf0300f59f49bc3e970bad15c11f961fe2347accffff19d96ec9778e3"));
         checkpoints.put(  4991, Sha256Hash.wrap("000000003b01809551952460744d5dbb8fcbd6cbae3c220267bf7fa43f837367"));
         checkpoints.put(  9918, Sha256Hash.wrap("00000000213e229f332c0ffbe34defdaa9e74de87f2d8d1f01af8d121c3c170b"));
@@ -214,6 +209,7 @@ public class CoinDefinition {
         checkpoints.put( 75095, Sha256Hash.wrap("0000000000193d12f6ad352a9996ee58ef8bdc4946818a5fec5ce99c11b87f0d"));
         checkpoints.put( 88805, Sha256Hash.wrap("00000000001392f1652e9bf45cd8bc79dc60fe935277cd11538565b4a94fa85f"));
         checkpoints.put( 90544, Sha256Hash.wrap("000000000001b284b79a44a95215d7e6cf9e22cd4f9b562f2cc796e941e0e411"));
+*/
     }
 
     //Unit Test Information

@@ -20,15 +20,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.dashj</groupId>
-        <artifactId>dashj-parent</artifactId>
+        <groupId>com.knolza</groupId>
+        <artifactId>gamblrj-parent</artifactId>
         <version>0.14.3</version>
     </parent>
 
-    <artifactId>dashj-core</artifactId>
+    <artifactId>gamblrj-core</artifactId>
 
-    <name>dashj</name>
-    <description>A Java Dash library</description>
+    <name>gamblrj core</name>
+    <description>A Java Gamblr library</description>
 
     <packaging>jar</packaging>
 
@@ -427,7 +427,7 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>org.bitcoinj</groupId>
+            <groupId>com.knolza</groupId>
             <artifactId>orchid</artifactId>
             <version>1.2.1</version>
         </dependency>

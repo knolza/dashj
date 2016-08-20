@@ -2505,7 +2505,7 @@ public class Wallet extends BaseTaggableObject
 
             isConsistentOrThrow();
 
-            //Dash Specific
+            //Gamblr Specific
             if(tx.getConfidence().isIX() && tx.getConfidence().getSource() == Source.SELF) {
                 context.instantx.mapTxLockReq.put(tx.getHash(), tx);
                 context.instantx.createNewLock((TransactionLockRequest)tx);
